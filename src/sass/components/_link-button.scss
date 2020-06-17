@@ -1,0 +1,96 @@
+.link-button{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  font-size: $text--medium;
+  font-family: $font-pattern;
+  padding: $space--small $space--medium;
+  border-radius: $border--radius;
+  border: 0;
+  margin: $space--small 0;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-button--primary{
+  background-color: $color--primary;
+  color: $text--inverted;
+  height: 24px;
+  min-width: 100px;
+
+  svg{
+     fill: $text--inverted;
+  }
+
+  &:focus{
+    outline: none;
+    border: $border--small $text--inverted;
+    box-shadow: $shadow-focus  $color--primary;
+  }
+
+  &:hover{
+    background-color: darken($color--primary, 10%);
+    transition: background-color $transition;
+    text-decoration: underline;
+  }
+}
+
+.link-button--secondary{
+  background-color: $background--clean;
+  color: $color--primary;
+  border: $border--small $color--primary;
+
+  svg{
+    fill: $color--primary;
+  }
+
+  &:focus{
+    outline: none;
+    border: $border--small $text--inverted;
+    box-shadow: $shadow-focus $color--primary;
+  }
+
+  &:hover{
+    background-color: darken($background--clean, 10%);
+    transition: background-color $transition;
+    text-decoration: underline;
+  }
+}
+
+.link-button--tertiary{
+  background-color: $color--secondary;
+  color: darken($color--primary, 15% );
+
+  svg{
+    fill: darken($color--primary, 15% );
+  }
+
+ &:focus{
+    outline: none;
+    border: $border--small $text--inverted;
+    box-shadow: $shadow-focus  darken($color--primary, 15% );
+  }
+
+  &:hover{
+    background-color: darken($color--secondary, 15%);
+    transition: background-color $transition;
+    text-decoration: underline;
+  }
+}
+
+.link-button--full{
+  width: 100%;
+}
+
+.link-{
+  justify-content: space-between;
+
+  span{
+    flex-grow: 1;
+  }
+}
+
+.link-button--bold{
+  font-weight: $text-weight--medium;
+}

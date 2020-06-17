@@ -1,0 +1,46 @@
+.button-selectable{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.button-selectable__item{
+  display: flex;
+  align-items: center;
+  margin-right: $space--small;
+  border: $border--medium $color--strokes;
+  background-color: $background--light;
+  cursor: pointer;
+  border-radius: 3px;
+  flex-grow: 1;
+  padding: $space--medium;
+  font-weight: $text-weight--small;
+  font-size: $text--medium;
+  font-family: $font-pattern;
+
+  &:hover{
+    background-color: $background--light;
+  }
+
+  .image{
+    opacity: 0.4;
+  }
+
+  &.is-active{
+    border: $border--medium $color--primary-700;
+    background-color: $color--primary-200;
+    font-weight: $text-weight--extra-large;
+
+    .text{
+      color: $text--primary;
+    }
+
+    .image{
+      opacity: 1;
+    }
+  }
+
+  .text{
+    color: $text--secondary;
+  }
+}

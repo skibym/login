@@ -1,0 +1,37 @@
+.label{
+  color: $text--primary;
+  font-family: $font-pattern;
+}
+
+.label--title{
+  font-size: $text--medium;
+  font-weight: $text-weight--large;
+  margin-bottom: $space--extra-small;
+  flex-grow: 1;
+}
+
+.label--description{
+  font-size: $text--small;
+  display: flex;
+  text-shadow: $text-shadow;
+  margin: $space--extra-small 0;
+  word-break: break-all;
+}
+
+.label--optional{
+  font-size: $text--small;
+  display: flex;
+  justify-content: flex-end;
+  margin: $space--extra-small 0;
+  margin-left: $space--small;
+  flex-grow: 1;
+  text-shadow: $text-shadow;
+}
+
+.label--textarea{
+  display: flex;
+  justify-content: flex-end;
+  font-size: $text--small;
+  flex-grow: 1;
+  margin: $space--extra-small 0;
+}

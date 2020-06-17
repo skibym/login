@@ -1,0 +1,7 @@
+# Browsers that we support
+
+last 2 versions
+not ie <= 11
+not ie_mob <= 11
+and_chr >= 55
+android >= 4.4

@@ -1,0 +1,121 @@
+/* Classes padrões */
+.icon{
+  display: flex;
+ }
+
+.icon--primary{
+  @include icon-fill($text--primary, 0.7);
+
+  svg{
+    fill: lighten($text--primary, 35%);
+  }
+}
+
+.icon--secondary{
+  fill: $color--secondary;
+
+  svg{
+    fill: $color--secondary;
+  }
+}
+
+.icon--tertiary{
+  fill: $color--tertiary;
+
+  svg{
+    fill: $color--tertiary;
+  }
+}
+
+.icon--inverted{
+  fill: $text--inverted;
+
+  svg{
+    fill: $text--inverted;
+  }
+}
+
+.icon--extra-small{
+  width: 8px;
+  height: 8px;
+
+  svg{
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.icon--small{
+  width: 16px;
+  height: 16px;
+}
+
+.icon--medium{
+  width: 24px;
+  height: 24px;
+}
+
+.icon--large{
+  width: 32px;
+  height: 32px;
+}
+
+.icon--extra-large{
+  width: 48px;
+  height: 48px;
+}
+
+/* Elementos especificos */
+.icon--top-bar-user{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: $color--strokes;
+  overflow: hidden;
+  margin: 1px solid $color--strokes;
+}
+
+.icon--logo{
+ // box-shadow: 0 5px 4px rgba(0, 0, 0, 0.12), 0 2px 7px rgba(0, 0, 0, 0.24);
+ width: 45px;
+ height: 48px;
+
+ @media #{$tablets} {
+  width: 49px;
+  height: 53px;
+  }
+}
+
+.icon--tab{
+  margin: -3px 5px;
+  fill: lighten($text--primary, 40%);
+
+  @media #{$tablets} {
+    margin: 0;
+    margin-right: 5px;
+  }
+}
+
+.icon--loading{
+  -webkit-animation: rotation .6s infinite linear;
+
+  @-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+  }
+
+  animation: rotation .6s infinite linear;
+
+  @keyframes rotation {
+		from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}
+  }
+}

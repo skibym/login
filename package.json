@@ -1,0 +1,38 @@
+{
+  "name": "ozair-front-end-design-system",
+  "version": "1.0.0",
+  "description": "Entrevista",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Ozair Novais",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-htmllint": "0.0.12",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-parker": "^0.1.4",
+    "gulp-postcss": "^6.4.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-themes": "^2.0.1",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-stylefmt": "^1.1.0",
+    "gulp-stylelint": "^3.9.0",
+    "htmllint": "^0.6.0",
+    "normalize-scss": "^6.0.0",
+    "postcss-reporter": "^3.0.0",
+    "postcss-scss": "^0.4.1",
+    "require-dir": "^0.3.1",
+    "sassdoc": "^2.2.2",
+    "stylelint-order": "^0.4.3",
+    "stylelint-scss": "^1.4.3",
+    "stylelint-selector-bem-pattern": "^1.0.0"
+  },
+  "dependencies": {}
+}

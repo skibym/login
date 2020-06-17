@@ -1,0 +1,24 @@
+.login {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e9f0ff;
+}
+
+.login__box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  background-color: $background--clean;
+  box-shadow: $shadow;
+  margin: $space--small;
+  width: 100%;
+  border-radius: $border--radius;
+  overflow: hidden;
+
+  @media #{$tablets} {
+    max-width: 992px;
+  }
+}
+

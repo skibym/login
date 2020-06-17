@@ -1,0 +1,105 @@
+////
+/// Aqui é a sobreposição das configurações de todos os mapas globais.
+/// @group Maps
+////
+
+// @import "abstracts/color";
+
+/// main-colors, contem as cores da paleta principal
+///
+/// @type Map
+/// @prop {String} key - Identificação da cor em hierarquia
+/// @prop {Color} value - cor
+$default-colors: (
+     'primary': #23b684, 'secondary': #0f595e, 'tertiary': #032e46, 'quaternary': #043d5d, 'variant': #e85656
+);
+
+/// base-colors, contem as cores da paleta base
+///
+/// @type Map
+/// @prop {String} key - Identificação da cor
+/// @prop {Color} value - cor
+$base-colors: (
+ 'body': #f0f0f0, 'clear': #fff, 'text': #666, 'text-light': #b2b2b2, 'border': #cbcbcb
+);
+
+/// feedback-colors, contem as cores da paleta de feedback
+///
+/// @type Map
+/// @prop {String} key - Identificação da cor pelo tipo de feedback
+/// @prop {Color} value - cor
+$feedback-colors: (
+ 'error': #e85656, 'success': #7accbe, 'warning': #ffc870, 'info': #8dcadf
+);
+
+/// font-size, contem os tamanhos de fontes principais
+///
+/// @type Map
+/// @prop {String} key - Identificação da fonte por tamanho
+/// @prop {String} value - tamanho da fonte
+$font-size: (
+ 'font-size-null': 10px, 'font-size-small': 12px, 'font-size-medium': 13px, 'font-size-large': 16px, 'font-size-extra-large': 20px, 'font-size-xx-large': 28px
+);
+
+/// line-height, contem os tamanhos de altura de linhas da tipografia
+//
+/// @type Map
+/// @prop {String} key - Identificação da altura da linha
+/// @prop {Number} value - tamanho da altura da linha
+$line-height: (
+ 'line-height-heading': 1.25, 'line-height-text': 1.5, 'line-height-reset': 1
+);
+
+/// spacing, contem os tamanhos de espaçamentos
+///
+/// @type Map
+/// @prop {String} key - Identificação do tamanho do espaçamento
+/// @prop {String} value - tamanho do espaçamento
+$spacing: (
+ 'spacing-none': 0, 'spacing-xxx-small': 2px, 'spacing-xx-small': 4px, 'spacing-extra-small': 8px, 'spacing-small': 12px, 'spacing-medium': 16px, 'spacing-large': 20px, 'spacing-extra-large': 24px, 'spacing-xx-large': 32px
+);
+
+/// border-width, contem os tamanhos de largura das bordas
+///
+/// @type Map
+/// @prop {String} key - Identificação do tamanho da largura borda
+/// @prop {String} value - tamanho da largura
+$border-width: (
+ 'width-none': 0, 'width-small': 1px, 'width-medium': 2px, 'width-large': 3px, 'width-extra-large': 4px, 'width-xx-large': 5px
+);
+
+/// shadow-property, contem os tamanhos das propriedades de sombras
+///
+/// @type Map
+/// @prop {String} key - Identificação do tamanho da propriedade
+/// @prop {String} value - tamanho da propriedade da sombra
+$shadow-property: (
+ 'width-none': 0, 'width-small': 1px, 'width-medium': 2px, 'width-large': 3px, 'width-extra-large': 4px, 'width-xx-large': 5px
+);
+
+/// shadow-color, contem as cores das sombras
+///
+/// @type Map
+/// @prop {String} key - Identificação de cores das sombras
+/// @prop {String} value - Cor da sombra
+$shadow-color: (
+ 'extra-light': tint(#000, 20%), 'light': tint(#000, 50%), 'dark': shade(#000, 50%), 'extra-dark': shade(#000, 20%)
+);
+
+/// z-layers, contem as ordens de sobreposição
+///
+/// @type Map
+/// @prop {String} key - Identificação da ordem da sobreposição
+/// @prop {number} value - ordem da sobreposição
+$z-layers: (
+ 'base': 500, 'header': 100, 'aside': 50, 'default': 1, 'below': -1
+);
+
+/// icon-size, contem os tamanhos dos ícones
+///
+/// @type Map
+/// @prop {String} key - Identificação do tamanho do ícone
+/// @prop {number} value - Tamanho do ícone
+$icon-size: (
+ 'extra-small': 8px, 'small': 12px, 'medium': 16px, 'large': 22px, 'extra-large': 64px
+ );

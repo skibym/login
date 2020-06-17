@@ -1,0 +1,109 @@
+.button-text{
+  display: flex;
+  align-items: center;
+  font-size: $text--medium;
+  font-family: $font-pattern;
+  border-radius: $border--radius;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: $text-weight--large;
+
+  span{
+    flex-grow: 1;
+  }
+
+  &:focus{
+    outline: none;
+    border: 0;
+  }
+
+  &.is-disabled{
+    color: lighten($text--primary, 38%);
+    cursor: no-drop;
+    @include transition(background-color, color, $transition);
+
+    svg{
+      fill: lighten($text--primary, 40%);
+    }
+
+    &:hover{
+      color: lighten($text--primary, 40%);
+    }
+  }
+}
+
+.button-text--primary{
+  background-color: transparent;
+  color: $color--primary-700;
+
+  svg{
+    @include icon-fill($color--primary-700, 0.7);
+  }
+
+  &:hover{
+    background-color: transparent;
+    transition: background-color $transition;
+    color: darken($title--primary, 33%) ;
+
+    svg{
+      fill: darken($title--primary, 33%) ;
+    }
+  }
+}
+
+.button-text--secondary{
+  background-color: transparent;
+  color:  $button-text--secondary;
+  border: none;
+
+  svg{
+    @include icon-fill($button-text--secondary, 0.7);
+  }
+
+  &:hover{
+    transition: background-color $transition;
+  }
+}
+
+.button-text--inverted{
+  background-color: transparent;
+  color: $text--inverted;
+
+  svg{
+    fill: $text--inverted;
+  }
+
+  &:hover{
+    background-color: transparent;
+    transition: background-color $transition;
+  }
+}
+
+.button-text--extra-small{
+  font-size:  $text--extra-small;
+}
+
+.button-text--small{
+  font-size: $text--small;
+}
+
+.button-text--medium{
+  font-size: $text--medium;
+}
+
+.button-text--large{
+  font-size: $text--large;
+}
+
+.button-text--extra-large{
+  font-size: $text--extra-large;
+}
+
+
+
+
+
+

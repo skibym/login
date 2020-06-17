@@ -1,0 +1,25 @@
+.info{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.info__title{
+  display: flex;
+  color: $text--secondary;
+  font-family: $font-pattern;
+  font-size: $text--small;
+  text-shadow: $text-shadow;
+  text-transform: uppercase;
+}
+
+.info__text{
+  display: flex;
+  color: $text--primary;
+  font-family: $font-pattern;
+  font-size: $text--medium;
+  font-weight: $text-weight--large;
+  width: 100%;
+  word-break: break-word;
+  padding-bottom: $space--extra-small;
+}

@@ -1,0 +1,16 @@
+@mixin grid-system($width) {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  width: $width;
+  box-sizing: border-box;
+}
+
+@mixin transition($transition-type...){
+  transition: $transition-type;
+}
+
+@mixin icon-fill ($color, $opacity) {
+    fill: $color;
+    opacity: $opacity;
+}

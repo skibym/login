@@ -1,0 +1,138 @@
+﻿// Charset
+@charset "utf-8";
+
+// **Cores**
+$color--primary: #3c6dec;
+$color--primary-700: #0A2466;
+$color--primary-200: #EEF2FD;
+
+$color--secondary: #ffc964;
+$color--secondary-700: #ef9e09;
+$color--secondary-200: #FFDFA5 ;
+
+$color--tertiary:   #da3688;
+$color--tertiary-700:  #a70155;
+$color--tertiary-200:  #e46ca8;
+
+$color--strokes: #DEE1E3;
+$color--success: #8CC152;
+$color--error: #DA4453;
+$color--warning: #ffba3a;
+$color--disabled: #BFC3C6;
+$color--inverted: #fff;
+
+// **Textos**
+//Tamanho do texto
+$text--extra-small: 10px;
+$text--small: 12px;
+$text--medium: 14px;
+$text--large: 18px;
+$text--extra-large: 22px;
+
+//Peso do texto
+$text-weight--extra-small: 300;
+$text-weight--small: 400;
+$text-weight--medium: 500;
+$text-weight--large: 600;
+$text-weight--extra-large: 700;
+
+//Cores do texto
+$text--primary: #4e4e4e;
+$text--secondary: #C8C8C8;
+$text--inverted: #fff;
+
+//Sombra do texto
+$text-shadow: 0 0 0 #353535, 0 0 1px transparent;
+$text-shadow--inverted: 0 0 0 #fff, 0 0 1px transparent;
+
+
+//**Titulos**
+//Cores do titulos
+$title--primary: #0A2466;
+$title--secondary: #5868c3;
+$title--tertiary: #7E7E7E;
+$title--inverted: #fff;
+
+$title--extra-small: 16px;
+$title--small: 20px;
+$title--medium: 24px;
+$title--large: 30px;
+$title--extra-large: 38px;
+
+//**Button text**
+//Cores do button-text
+$button-text--primary: $color--primary;
+$button-text--secondary: #7E7E7E;
+
+// **Backgrounds**
+$background--clean: #fff;
+$background--extra-light: #f9f9f9;
+$background--light: #f3f4f6;
+$background--medium: #eaeaea;
+$background--strong: #ACB0B2;
+$background--body:  #ebeff3;
+$background--primary:  #0A2466;
+
+
+// **Bordas**
+$border--radius: 3px;
+$border--small: 1px solid;
+$border--medium: 2px solid;
+$border--large: 3px solid;
+
+// **Sombras**
+$shadow: 2px 2px 8px 0px rgba(10, 36, 102,.1);
+$shadow-focus: 0 0 0 2px;
+
+// **Transições**
+$transition: .2s linear;
+
+// **Espaçamento**
+$space--extra-small: 2px;
+$space--small: 4px;
+$space--medium: 8px;
+$space--large: 16px;
+$space--extra-large: 32px;
+
+//* Z-index *//
+$visible: 1;
+$more-visible: 2;
+$most-visible: 3;
+
+// **Hover**
+$hover--inverted: rgb(51, 51, 51);
+
+// Abstracts
+@import "abstracts/_mixins";
+
+// Base
+@import "base/_grid",
+        "base/_reset",
+        "base/_media",
+        "base/_typography";
+
+// Components
+@import "components/_button",
+        "components/_button-text",
+        "components/_label",
+        "components/_input",
+        "components/_link-button",
+        "components/_align",
+        "components/_title",
+        "components/_text",
+        "components/_box",
+        "components/_image",
+        "components/_icon",
+        "components/_margin",
+        "components/_padding",
+        "components/_link";
+
+// Pages
+@import "pages/_login";
+ 
+
+.full-height{
+  height: 100%;
+}
+
+

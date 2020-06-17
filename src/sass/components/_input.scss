@@ -1,0 +1,218 @@
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+
+  &.has-error {
+    .input__display {
+      background-color: $color--error;
+      color: $text--inverted;
+      @include transition(background-color, $transition);
+
+      svg {
+        fill: $text--inverted;
+        @include transition(fill, $transition);
+      }
+    }
+
+    .input__item {
+      border: $border--medium $color--error;
+      @include transition(border, $transition);
+    }
+
+    svg {
+      fill: $color--error;
+      @include transition(fill, $transition);
+    }
+
+    .input__textarea {
+      border: $border--medium $color--error;
+    }
+
+    .pill__item {
+      svg {
+        fill: $color--primary;
+      }
+    }
+
+    .pill {
+      border-left: $border--medium $color--error;
+      border-right: $border--medium $color--error;
+      border-bottom: $border--medium $color--error;
+    }
+  }
+
+  &.has-success {
+    .input__display {
+      background-color: $color--success;
+      color: $text--inverted;
+      @include transition(background-color, $transition);
+
+      svg {
+        fill: $text--inverted;
+        @include transition(fill, $transition);
+      }
+    }
+
+    .input__item {
+      border: $border--medium $color--success;
+      @include transition(border, $transition);
+    }
+
+    svg {
+      fill: $color--success;
+      @include transition(fill, $transition);
+    }
+  }
+}
+
+.input__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 25px;
+  height: 100%;
+  font-family: $font-pattern;
+  font-weight: $text-weight--medium;
+  font-size: $text--small;
+  fill: darken($color--strokes, 18%);
+  top: 50%;
+  transform: translate(0%, -50%);
+  padding: 0 $space--small;
+
+  &:hover {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.input__display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: lighten($color--strokes, 8%);
+  top: 0;
+  width: 26px;
+  height: 32px;
+  padding: 0 $space--small;
+  margin: 2px;
+  font-family: $font-pattern;
+  font-weight: $text-weight--medium;
+  font-size: $text--small;
+}
+
+.input__display--right {
+  right: 0;
+  border-radius: 0 1px 1px 0;
+}
+
+.input__display--left {
+  left: 0;
+  border-radius: 1px 0 0 1px;
+  // padding: 0 $space--small;
+}
+
+.input__info {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.input__info--right {
+  .input__item {
+    padding-right: 38px;
+    padding-left: $space--small;
+  }
+}
+
+.input__info--left {
+  .input__item {
+    padding-left: 38px;
+  }
+}
+
+.input__info--both {
+  .input__item {
+    padding: 0 38px;
+  }
+}
+
+.input__textarea {
+  width: 100%;
+  border-radius: $border--radius;
+  border: $border--medium $color--strokes;
+  padding: $space--small;
+  font-family: $font-pattern;
+  font-size: $text--small;
+  box-sizing: border-box;
+
+  &::-webkit-input-placeholder {
+    color: lighten($color--strokes, 3%);
+  }
+
+  &:-moz-placeholder {
+    color: lighten($color--strokes, 3%);
+  }
+
+  &::-moz-placeholder {
+    color: lighten($color--strokes, 3%);
+  }
+
+  &:-ms-input-placeholder {
+    color: lighten($color--strokes, 3%);
+  }
+
+  &:hover {
+    border: $border--medium $color--secondary;
+    transition: border $transition;
+  }
+
+  &:focus {
+    border: $border--medium $color--primary;
+    outline: none;
+  }
+}
+
+.input__item {
+  width: 100%;
+  height: 36px;
+  border-radius: $border--radius;
+  border: $border--medium $color--strokes;
+  padding: 0 $space--small;
+  font-family: $font-pattern;
+  font-size: $text--small;
+  box-sizing: border-box;
+  text-shadow: 0 0 0 #000000, 0 0 1px transparent;
+
+  &::-webkit-input-placeholder {
+    color: $color--strokes;
+  }
+
+  &:-moz-placeholder {
+    color: $color--strokes;
+  }
+
+  &::-moz-placeholder {
+    color: $color--strokes;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color--strokes;
+  }
+
+  &:hover {
+    border: $border--medium $color--secondary;
+    transition: border $transition;
+  }
+
+  &:focus {
+    border: $border--medium $color--primary;
+    outline: none;
+  }
+}

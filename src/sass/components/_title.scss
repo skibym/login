@@ -1,0 +1,55 @@
+.title{
+  width: 100%;
+  font-family: $font-pattern;
+  margin: 0;
+  font-weight: $text-weight--large;
+  line-height: 1.3;
+}
+
+.title--extra-small{
+  font-size: $title--extra-small;
+}
+
+.title--small{
+  font-size: $title--small;
+}
+
+.title--medium{
+  font-size: $title--medium;
+}
+
+.title--large{
+  font-size: $title--large;
+}
+
+.title--extra-large{
+  font-size: $title--extra-large;
+}
+
+.title--center{
+  text-align: center;
+}
+
+.title--right{
+  text-align: right;
+}
+
+.title--left{
+  text-align: left;
+}
+
+.title--primary{
+  color: $title--primary;
+}
+
+.title--secondary{
+  color: $title--secondary;
+}
+
+.title--tertiary{
+  color: $color--tertiary;
+}
+
+.title--inverted{
+  color: $text--inverted;
+}

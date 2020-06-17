@@ -1,0 +1,80 @@
+.text{
+  font-family: $font-pattern;
+  // color: $text--primary;
+  text-shadow: $text-shadow;
+}
+
+.text--extra-small{
+  font-size:  $text--extra-small;
+}
+
+.text--small{
+  font-size: $text--small;
+}
+
+.text--medium{
+  font-size: $text--medium;
+}
+
+.text--large{
+  font-size: $text--large;
+}
+
+.text--extra-large{
+  font-size: $text--extra-large;
+}
+
+.text--center{
+  text-align: center;
+}
+
+.text--right{
+  text-align: right;
+}
+
+.text--left{
+  text-align: left;
+}
+
+.text--inverted{
+  color: $text--inverted;
+  text-shadow: $text-shadow--inverted;
+}
+
+.text--bold{
+  font-weight: $text-weight--large;
+}
+
+.text--full{
+  width: 100%;
+}
+
+.text--primary{
+  color: $text--primary;
+  text-shadow: $text-shadow;
+}
+
+.text--secondary{
+  color: $text--secondary;
+  text-shadow: $text-shadow;
+}
+
+.text--tertiary{
+  color: $color--tertiary;
+  text-shadow: $text-shadow;
+}
+
+.text--error{
+  font-size: $text--extra-small;
+  color: $color--error;
+  margin-top: $space--extra-small;
+  line-height: $text--medium;
+  flex-grow: 1;
+  min-width: 50%;
+  min-height: 16px;
+}
+
+.text--uppercase{
+  text-transform: uppercase;
+}
+
